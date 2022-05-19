@@ -12,8 +12,6 @@ $censured = $_GET['censured'];
 
 $censuredParagraph = str_replace($censured, '***', $paragrafo);
 
-echo ($censuredParagraph);
-
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +28,16 @@ echo ($censuredParagraph);
     <form action="index.php" method="get">
         <label for="censured">parola censurata:</label><br>
         <input type="text" id="censured" name="censured"><br>
-        
         <input type="submit" value="Submit">
     </form>
+
+    <?php 
+        
+    echo ($censuredParagraph);
+
+    ?>
+
+    
 
 </body>
 </html>
